@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Rubik, sans-serif;
+  }
+  .container-max{
+    @apply mx-auto max-w-7xl border-4 border-red-700;
+    /* @apply md:pl-24 */
+  }
+  .container-p{
+    @apply px-4;
+  }
+  .sm-padding{
+    @apply max-md:px-8;
+  }
+
+}
+

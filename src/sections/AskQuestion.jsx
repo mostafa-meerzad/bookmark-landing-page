@@ -14,7 +14,7 @@ const AskQuestion = () => {
         <QuestionCard key={arg.question} {...arg} />
       ))}
 
-      <a href="#" className="mt-12 py-3 px-5 rounded-lg text-white bg-soft-blue">More Info</a>
+      <a href="#" className="mt-12 py-3 px-5 rounded-lg text-white w-fit bg-soft-blue">More Info</a>
     </div>
   );
 };

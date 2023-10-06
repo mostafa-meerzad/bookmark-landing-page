@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Arrow } from "../assets/icons";
-// import { arrow } from "../assets/icons";
+import Arrow  from "../components/Arrow";
+
 
 const QuestionCard = ({ question, answer }) => {
   const [isExpanded, setIsExpanded] = useState(false);

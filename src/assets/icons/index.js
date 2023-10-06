@@ -4,6 +4,5 @@ import error from "./icon-error.svg";
 import facebook from "./icon-facebook.svg";
 import hamburger from "./icon-hamburger.svg";
 import twitter from "./icon-twitter.svg";
-import Arrow from "./Arrow";
 
-export { Arrow, close, error, facebook, hamburger, twitter };
+export {  close, error, facebook, hamburger, twitter };
