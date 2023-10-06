@@ -14,7 +14,7 @@ const AskQuestion = () => {
         <QuestionCard key={arg.question} {...arg} />
       ))}
 
-      <a href="#" className="mt-12 py-3 px-5 rounded-lg text-white w-fit bg-soft-blue">More Info</a>
+      <a href="#" className="mt-12 w-24 h-9 flex justify-center items-center rounded-lg text-white bg-soft-blue hover:text-soft-blue hover:bg-white hover:border-2 hover:border-soft-blue active:scale-[98%] transition-all ease-in-out">More Info</a>
     </div>
   );
 };

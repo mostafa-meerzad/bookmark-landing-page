@@ -4,30 +4,32 @@ import Close from "../components/Close";
 import SocialLink from "../components/SocialLink";
 import { headerLinks, socialLinks } from "../constants";
 import Hamburger from "../components/Hamburger";
+import HeaderLink from "../components/HeaderLink";
 
 const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   return (
     <header
       className="flex justify-between 
-  py-12 items-center   max-md:px-4 max-lg:px-[5%] px-[10%]  "
+  py-8 items-center   max-md:px-4 max-lg:px-[5%] px-[10%]  "
     >
       <BookMark />
 
-      <ul className="flex justify-center items-center gap-4 max-md:hidden">
+      <ul className="flex justify-center items-center gap-8 max-md:hidden">
         {headerLinks.map((link) => (
-          <li key={link.name} className="text-very-dark-blue ">
-            <a href={link.url}>{link.name}</a>
-          </li>
+          <HeaderLink className="text-very-dark-blue " {...link} />
         ))}
         <li>
-          <button className="py-2 px-4 text-white bg-soft-red rounded-lg">
+          <button className="w-20 h-9 transition-all ease-in-out text-white bg-soft-red rounded-lg hover:bg-white hover:text-very-dark-blue hover:border-2 hover:border-soft-red active:scale-[98%]">
             LOGIN
           </button>
         </li>
       </ul>
 
-      <button className=" " onClick={() => setIsMenuVisible(!isMenuVisible)}>
+      <button
+        className="md:hidden"
+        onClick={() => setIsMenuVisible(!isMenuVisible)}
+      >
         <Hamburger />
       </button>
 
@@ -44,15 +46,13 @@ const Header = () => {
         </div>
 
         <ul className="flex flex-col justify-center items-center mt-12">
-          {headerLinks.map(({ name, url }) => (
-            <li
-              key={name}
-              className="w-full text-center text-2xl text-white  border-b-[1px] border-grayish-blue py-4  "
-            >
-              <a href={url}>{name}</a>
-            </li>
+          {headerLinks.map((link) => (
+            <HeaderLink
+              className="w-full text-center text-2xl text-white  border-b-[1px] border-grayish-blue py-4 hover:text-gray-400 "
+              {...link}
+            />
           ))}
-          <button className="text-2xl text-white font-semibold mt-6 border-white border-2 rounded-lg px-5 py-3 w-full">
+          <button className="text-2xl text-white font-semibold mt-6 border-white border-2 rounded-lg px-5 py-3 w-full hover:text-gray-400 hover:border-gray-400 active:scale-[99%]">
             LOGIN
           </button>
         </ul>

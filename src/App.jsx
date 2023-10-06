@@ -9,16 +9,16 @@ const App = () => {
   return (
     <>
       <header className="mx-auto max-w-screen-2xl">
-        <Header/>
+        <Header />
       </header>
-      <main className="border-2 mx-auto max-w-screen-2xl max-md:px-4 max-lg:px-[5%] px-[10%] overflow-hidden ">
-        <Hero/>
-        <Features/>
-        <Download/>
-        <AskQuestion/>
+      <main className="mx-auto max-w-screen-2xl max-md:px-4 max-lg:px-[5%] px-[10%] overflow-hidden ">
+        <Hero />
+        <Features />
+        <Download />
+        <AskQuestion />
       </main>
       <footer className="mx-auto max-w-screen-2xl ">
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );

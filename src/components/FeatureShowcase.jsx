@@ -22,8 +22,8 @@ const FeatureShowcase = ({ activeFeature }) =>
             <p className="py-6 text-grayish-blue max-md:text-center max-w-lg">{desc}</p>
             <a
               href={link}
-              className="py-3 px-5 bg-soft-blue text-white
-              max-w-max rounded-md inline max-md:hidden "
+              className="w-24 h-12 bg-soft-blue text-white
+               rounded-md flex justify-center items-center hover:text-soft-blue hover:bg-white hover:border-2 hover:border-soft-blue active:scale-[98%] transition-all ease-in-out max-md:hidden "
             >
               more info
             </a>

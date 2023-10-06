@@ -16,10 +16,10 @@ const Hero = () => {
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <div className="flex max-md:justify-around gap-4">
-          <button className="py-3 px-5 rounded-lg shadow-lg bg-soft-blue text-white">
+          <button className="w-44 h-12 rounded-lg shadow-lg bg-soft-blue text-white hover:text-soft-blue hover:bg-white hover:border-2 hover:border-soft-blue active:scale-[98%]">
             Get it on Chrome
           </button>
-          <button className="py-3 px-5 rounded-lg shadow-lg bg-gray-50">
+          <button className="w-44 h-12 rounded-lg shadow-lg bg-gray-50 hover:bg-soft-blue hover:border-2 hover:border-white hover:text-white active:scale-[98%]">
             Get it on Firefox
           </button>
         </div>
