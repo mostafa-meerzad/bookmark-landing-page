@@ -81,4 +81,12 @@ const socialLinks = [
   {name:"facebook", img:facebook, url:"#"},
   {name:"twitter",img: twitter, url:"#"},
 ]
-export { features, featureLinks, extensions, questions, footerLinks, socialLinks };
+
+const headerLinks = [
+  {name:"Features" , url:"#"},
+  {name:"Pricing" , url:"#"},
+  {name:"Contact" , url:"#"},
+  
+
+]
+export { features, featureLinks, extensions, questions, footerLinks, socialLinks, headerLinks };
